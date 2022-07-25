@@ -1,0 +1,120 @@
+body{
+    background: #0b0c10;
+    color: #e1e1f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formId h1{
+    font-family: 'Arial', fantasy;
+    font-size: 35px;
+}
+#formId span{
+    font-family: 'Arial', fantasy;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+#formId{
+    top: 50%;
+    transform: translate(0%, 30%);
+    height: 350px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    /*align-items: center;
+    */border: 2px solid;
+    border-color: #66fcf1;
+    border-radius: 10px;
+}
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;   
+}
+#inputGroup{
+    display: block;
+}
+#inputGroup input{
+    display: inline-block;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #66fcf1;
+    background-color: #0b0c10;
+    color: #e1e1f6;
+    margin-bottom: 10px;
+    width: 90px;
+    height: 90px;
+    font-size: 40px;
+    text-align: center;
+}
+#sect{
+    text-align: start;
+}
+#result{
+    display: inline-block;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ff0000;
+    background-color: #0b0c10;
+    color: #e1e1f6;
+    margin-bottom: 10px;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#inputGroup table{
+    border: none;
+}
+#inputGroup table tr td{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#arrowIcon{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    align-items: center;
+    border: none;
+    border-radius: 10%;
+    font-size: 25px;
+    background-color: #0b0c10;
+    color: #e1e1f6;
+}
+
+#operationIcon{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    align-items: center;
+    background: none;
+    border: none;
+    color: #00ff2a;
+    font-size: 25px;    
+    margin-top: 10px;
+}
+
+@keyframes spin {
+    0% {
+    transform: rotateZ(0deg);
+    }
+    50%{
+        transform: rotateZ(180deg);
+    }
+     100% {
+    transform: rotateZ(360deg);
+     }
+}
+
+#arrowIcon:active{
+        animation: spin 0.5s none;
+    }
+#arrowIcon{
+    cursor: pointer;
+}
